@@ -1,16 +1,18 @@
 package fundamentos;
+//import java.lang.ArrayIndexOutOfBoundsException;
+
 public class Exercico {
 	
 
 	
     public static void main(String[] args) {
-    	int[] x = {2,3,5};
+    	int[] text01 = {2,3,5};
     	int y = 2;
     	
-    	int resp01 = findLast(x,y);
+    	int resp01 = findLast(text01,y);
     	System.out.println("Respsota 01: "+resp01);
     	
-    	int[] text02 = {0,1,0};
+    	int[] text02 = {0,1,3};
     	int resp02 = lastZero(text02);
     	System.out.println("Resposta 02: "+resp02);
     	
@@ -26,7 +28,8 @@ public class Exercico {
 	}
 
 	public static int findLast (int[]x,int y) {
-		for (int i=x.length-1; i>0 ;i--)
+		//for (int i = x.length-1; i>=0 ;i--) //right
+		for (int i = x.length-1; i>0 ;i--)
 		{
 		 if(x[i] == y)
 		 {
@@ -37,7 +40,8 @@ public class Exercico {
 	}
 	
 	public static int lastZero(int[]x) {
-		for(int i = 0; i < x.length; i++)
+		for (int i = x.length-1; i>=0 ;i--)
+		//for(int i = 0; i < x.length; i++)
 		{
 			if (x[i]==0)
 			{
