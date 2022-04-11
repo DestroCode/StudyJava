@@ -12,7 +12,7 @@ public class Exercico {
     	int resp01 = findLast(text01,y);
     	System.out.println("Respsota 01: "+resp01);
     	
-    	int[] text02 = {0,1,3};
+    	int[] text02 = {0,1,0};
     	int resp02 = lastZero(text02);
     	System.out.println("Resposta 02: "+resp02);
     	
@@ -20,7 +20,7 @@ public class Exercico {
     	int resp03 = countPositive(text03);
     	System.out.println("Resposta 03: "+resp03);
     	
-    	int[] text04 = {-3,-2,0,4};
+    	int[] text04 = {-3,-2,0,1,4};
     	int resp04 = oddOrPos(text04);
     	System.out.println("Resposta 04: "+resp04);
     	
@@ -40,8 +40,8 @@ public class Exercico {
 	}
 	
 	public static int lastZero(int[]x) {
-		for (int i = x.length-1; i>=0 ;i--)
-		//for(int i = 0; i < x.length; i++)
+		//for (int i = x.length-1; i>=0 ;i--) rigth
+		for(int i = 0; i < x.length; i++)
 		{
 			if (x[i]==0)
 			{
@@ -55,6 +55,7 @@ public class Exercico {
 		int count = 0;
 		for (int i = 0; i < x.length; i++)
 		{
+			//if (x[0] > 0){ //rigth
 			if (x[i] >= 0) {
 				count++;
 			}
@@ -66,7 +67,8 @@ public class Exercico {
 		int count = 0;
 		for (int i = 0; i < x.length;i++) 
 		{
-			if(x[i]%2 == 1 || x[i] > 0) 
+			//if(x[i]%2 == 1 || x[i] >= 0) //rigth 
+			if(x[i]%2 == 1 || x[i] >= 0) 
 			{
 				count++;
 			}
