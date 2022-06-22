@@ -8,14 +8,26 @@ public class DesafioCalculadora {
 		System.out.println("Digite os valores num1 e num2 ");
         //entrada de valores
 		System.out.print("Num 1:. ");
-        double num1 = entrada.nextInt();
+        double num1 = entrada.nextDouble();
         //entrada num1
         System.out.print("Num 2:. ");
-        double num2 = entrada.nextInt();
+        double num2 = entrada.nextDouble();
         //entrada num2
-        System.out.print("Digite o seu operador [+ / - *:. ");
-        String op = entrada.next();
+        System.out.print("Digite o seu operador [ + / - * % ]:. ");
+        String op = entrada.next();//joga o valor .next()
         //entrada operador
+        
+        //Logico
+        double resultado = "+".equals(op) ? num1 + num2 : 0;
+        resultado = "-".equals(op) ? num1 - num2 : resultado;
+        resultado = "/".equals(op) ? num1 / num2 : resultado;
+        resultado = "*".equals(op) ? num1 * num2 : resultado;
+        resultado = "%".equals(op) ? num1 % num2 : resultado;
+        // usando ternarios
+        
+        
+        
+        
         //calcular com else if
 //        double resultado = 0;
 //        if("+".equals(op)){
@@ -29,12 +41,12 @@ public class DesafioCalculadora {
 //        }else if("-".equals(op)) {
 //        	resultado = num1 - num2;
 //        }else if("*".equals(op)) {
-//        	resultado = num1 * num2;
+//        	resultado = num1 * num2;`
 //        }else {        	
 //        	System.out.println("Operador invalido Arrombado!!");
 //        }
 //        
-//        System.out.printf("A operacao %f %s %f = %f", num1, op, num2, resultado);
+        System.out.printf("A operacao %.2f %s %.2f = %.2f", num1, op, num2, resultado);
 	    entrada.close();
 	}
 
