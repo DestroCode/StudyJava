@@ -6,18 +6,19 @@ import java.util.Scanner;
 
 public class Exercico05 {
 	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite os valores do triangulo ");
-        //entrada de valores
-		System.out.print("Base :. ");
-        double base = entrada.nextDouble();
-        //entrada base
-        System.out.print("Altura:. ");
-        double altura = entrada.nextDouble();
-        //entrada altura
-        
-        double area = (base * altura) / 2;
-        System.out.printf("A Area do trinagulo e %.2f", area);
+		try (Scanner entrada = new Scanner(System.in)) {
+			System.out.println("Digite os valores do triangulo ");
+			//entrada de valores
+			System.out.print("Base :. ");
+			double base = entrada.nextDouble();
+			//entrada base
+			System.out.print("Altura:. ");
+			double altura = entrada.nextDouble();
+			//entrada altura
+			
+			double area = (base * altura) / 2;
+			System.out.printf("A Area do trinagulo e %.2f", area);
+		}
         
 	}
 
