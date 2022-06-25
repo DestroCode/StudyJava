@@ -16,7 +16,7 @@ public class If {
 		}
 		
 		
-		if(media < 7 && media >= 4.5) //identacao 
+		if(media < 7 && media >= 4.5) //identacao, uma unica sentenca 
 			System.out.println("Recuperacao, bora estudar mais!");
 		
 		
