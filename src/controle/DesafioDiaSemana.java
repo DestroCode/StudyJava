@@ -6,29 +6,33 @@ public class DesafioDiaSemana {
 	public static void main(String[] args) {
 		
 		//Domingo -> 1
-		//quata - > 4
+		//Quarta - > 4
 		
 		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite o dia da semana :. ");
+		System.out.print("Digite o dia da semana :. ");//nao saltar a linha
 		
 		String dia = entrada.next();
 		
-		if (dia.equals("\n Domingo")) {
-			System.out.println("1");
-		}else if (dia.equals("\n Segunda")) {
-			System.out.println("2");
-		}else if (dia.equals("\n Terca")) {
-			System.out.println("3");
-		}else if (dia.equals("\n Quarta")) {
-			System.out.println("4");
-		}else if (dia.equals("\n Quinta")) {
-			System.out.println("5");
-		}else if (dia.equals("\n Sexta")) {
-			System.out.println("6");
-		}else if (dia.equals("\n Sabado")) {
-			System.out.println("7");
+//		if ("domingo".equalsIgnoreCase(dia)) { // usando o proprio argumento
+//			System.out.println("\n1");
+//		if ("domingo".equals(dia.toLowerCase()) { // passando o argumento minusculo toLowerCase()
+//			System.out.println("\n1");
+		if (dia.equalsIgnoreCase("domingo")) { //ignora letras maiusculas equalsIgnoreCase
+			System.out.println("\n1");
+		}else if (dia.equalsIgnoreCase("segunda")) {
+			System.out.println("\n2");
+		}else if (dia.equalsIgnoreCase("terca")) {
+			System.out.println("\n3");
+		}else if (dia.equalsIgnoreCase("quarta")) {
+			System.out.println("\n4");
+		}else if (dia.equalsIgnoreCase("quinta")) {
+			System.out.println("\n5");
+		}else if (dia.equalsIgnoreCase("sexta")) {
+			System.out.println("\n6");
+		}else if (dia.equalsIgnoreCase("sabado")) {
+			System.out.println("\n7");
 		}else {
-			System.out.println("\n Valor incorreto !!!");
+			System.out.println("\nValor incorreto !!!");
 		}
 		
 		entrada.close();
