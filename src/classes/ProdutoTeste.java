@@ -10,9 +10,11 @@ public class ProdutoTeste {
 		var p2 = new Produto("Caneta preta", 12.56);
 		var p3 = new Produto("Lapiz", 2.5);
 		
-		System.out.println(p1.nome);
-		System.out.println(p2.nome);
-		System.out.println(p3.nome);
+		Produto.desconto = 0.5; //change
+		
+		System.out.println(p1.nome + " / " + p1.precoComDesconto());
+		System.out.println(p2.nome + " / " + p2.precoComDesconto());
+		System.out.println(p3.nome + " / " + p3.precoComDesconto());
 		
 		
 		double precoFinal1 = p1.precoComDesconto();
