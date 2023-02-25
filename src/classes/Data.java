@@ -9,9 +9,10 @@ public class Data {
 		this.ano = ano;
 	}
 	 Data() {
-		this.dia = 01;
-		this.mes = 01;
-		this.ano = 1970;
+		//this.dia = 01;
+		//this.mes = 01;
+		//this.ano = 1970;
+		 this(1,1,1970); //passing the values ​​through another constructor
 	}
 
 	String obterData() {
