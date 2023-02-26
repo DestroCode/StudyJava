@@ -10,6 +10,7 @@ public class Aluno {
 	    int valor = entrada.nextInt();
 		
 	    double[] notas = new double[valor];
+	    
 	    System.out.println("Informe as notas");
 	    for (int i = 0; i < notas.length; i++) {
 			System.out.print("n" + (i+1) + ": ");
