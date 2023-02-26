@@ -16,8 +16,9 @@ public class Data {
 	}
 
 	String obterData() {
-		// return String.format("%d/%d/%d, dia, mes, ano);
-		return "" + dia + "/" + mes + "/" + ano; 
+		final String formato = "%d / %d / %d";
+		return String.format(formato, dia, mes, ano);
+		//return "" + dia + "/" + mes + "/" + ano; 
 	}
 
 }
