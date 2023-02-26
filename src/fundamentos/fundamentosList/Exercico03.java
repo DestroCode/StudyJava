@@ -1,4 +1,4 @@
-package lista01;
+package fundamentos.fundamentosList;
 //Criar um programa que leia o peso e a altura 
 //do usuário e imprima no console o IMC.
 

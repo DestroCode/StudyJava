@@ -1,4 +1,4 @@
-package lista01;
+package fundamentos.fundamentosList;
 
 import java.util.Scanner;
 

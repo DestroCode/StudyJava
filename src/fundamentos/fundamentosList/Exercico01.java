@@ -1,4 +1,4 @@
-package lista01;
+package fundamentos.fundamentosList;
 //1 - Criar um programa que leia a temperatura em 
 //Fahrenheit e converta para Celsius.
 import java.util.Scanner;

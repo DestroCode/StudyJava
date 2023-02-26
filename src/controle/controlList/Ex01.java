@@ -1,4 +1,4 @@
-package controleList;
+package controle.controlList;
 
 import java.util.Scanner;
 

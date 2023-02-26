@@ -1,16 +1,16 @@
-package controleList;
+package controle.controlList;
 
 import java.util.Scanner;
 
-public class Ex05 {
+public class Ex04 {
+	
 	private static boolean ehPrimo(int numero) {
 		for (int j = 2; j < numero; j++) {
 			if (numero % j == 0) {
 				return false;
 			}
 		}
-		return true;
-		
+		return true;	
 	}
 	
 	
@@ -26,6 +26,5 @@ public class Ex05 {
 		}
 		entrada.close();	
 	}
-
 
 }
