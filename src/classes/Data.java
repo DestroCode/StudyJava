@@ -2,7 +2,12 @@ package classes;
 
 public class Data {
 	int dia , mes , ano;
-	
+	 //variable initialization
+	 //byte , short, int, long -> 0
+	 //float, double -> 0.0
+	 //bolean -> false
+	 //char -> '/u000'
+	 //Objeto -> null
 	 Data(int dia, int mes, int ano) {
 		this.dia = dia;
 		this.mes = mes;
