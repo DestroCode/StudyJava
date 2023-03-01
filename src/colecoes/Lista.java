@@ -15,11 +15,11 @@ public class Lista {
 		System.out.println(lista.get(3)); //acess index
 		
 		//lista.remove(1); //remove
-		System.out.println(">>>>" + lista.remove(1));
+		System.out.println(">>>> " + lista.remove(1));
 		System.out.println(lista.remove(new Usuario("Manu")));
 		
-		System.out.println("Tem?" + lista.contains(new Usuario("Lia")));
-		System.out.println("Tem?" + lista.contains(u1));
+		System.out.println("Tem? " + lista.contains(new Usuario("Lia")));
+		System.out.println("Tem? " + lista.contains(u1));
 		
 		
 		
