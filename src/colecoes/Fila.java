@@ -19,9 +19,20 @@ public class Fila {
 		System.out.println(fila.element()); // return a java exception when it's an empty list
 		System.out.println(fila.element());
 		
+		
+		System.out.println(fila.poll()); // remove the element and return null when it's an empty list
+		System.out.println(fila.remove()); //remove the element and return a java exception when it's an empty list
+		System.out.println(fila.poll());
+		System.out.println(fila.poll());
+		System.out.println(fila.poll());
+		System.out.println(fila.poll());
+		System.out.println(fila.poll());
+
+		
 		//fila.size();
 		//fila.isEmpty();
 		//fila.clear();
+		//fila.contains(...)
 		
 	}
 
