@@ -38,7 +38,7 @@ public class Mapa {
 		for(Entry<Integer, String> registro: usuarios.entrySet()) {
 			System.out.print(registro.getKey() + " ");
 			System.out.println(registro.getValue());
-			//release
+			//review
 			
 		}
 	}
