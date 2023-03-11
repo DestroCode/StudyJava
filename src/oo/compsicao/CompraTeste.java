@@ -11,7 +11,7 @@ public class CompraTeste {
 		compra1.itens.add(new Item("Caderno", 3, 18.79));
 		
 		System.out.println(compra1.itens.size());
-		
+		System.out.println(compra1.obterValorTotal());
 	}
 
 }
