@@ -8,6 +8,6 @@ public class Compra {
 	String id;
 	List<Item> items = new ArrayList<Item>();
 	
-	
+	//begin 
 
 }
