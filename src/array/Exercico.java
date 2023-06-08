@@ -1,4 +1,4 @@
-package array;
+  package array;
 
 import java.util.Arrays;
 
@@ -33,7 +33,7 @@ public class Exercico {
 		
 		System.out.println(totalB / notasAlunosB.length);
 		
-		
+		//review
 	}
 
 }
