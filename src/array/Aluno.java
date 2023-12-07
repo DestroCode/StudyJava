@@ -12,7 +12,7 @@ public class Aluno {
 	    double[] notas = new double[valor];
 	    System.out.println("Informe as notas");
 	    for (int i = 0; i < notas.length; i++) {
-			System.out.print("n" + (i+1) + ": ");
+			System.out.print("n" + (i+1) + ": "); 
 			notas[i]=entrada.nextDouble();
 		}
 	    double total = 0.0;
